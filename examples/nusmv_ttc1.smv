@@ -1,0 +1,29 @@
+MODULE Component___8
+
+VAR
+		o___22 : boolean;
+		_current_state : { Init___15, FAKE_STATE };
+
+
+
+ASSIGN
+init(_current_state) := Init___15;
+
+TRANS ((_current_state = Init___15) & TRUE) & 
+		next(_current_state) = Init___15 & 
+		next(o___22) = TRUE & 
+		next(o___22_present) = TRUE | 
+	!(((_current_state = Init___15) & TRUE)) & 
+		next(o___22) = o___22 & 
+		next(o___22_present) = FALSE & 
+		next(_current_state) = _current_state;
+
+
+MODULE main
+
+VAR
+		Component___8Var : Component___8();
+
+
+
+

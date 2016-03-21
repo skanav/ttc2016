@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counter-example>
+	<node>
+		<state id="1">
+			<value variable="Component___8Var.o___22">FALSE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+	<node>
+		<state id="2">
+			<value variable="Component___8Var.o___22">TRUE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+	<node>
+		<state id="3">
+			<value variable="Component___8Var.o___22">TRUE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+	<node>
+		<state id="4">
+			<value variable="Component___8Var.o___22">TRUE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+</counter-example>

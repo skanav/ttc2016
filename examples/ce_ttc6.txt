@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counter-example>
+	<node>
+		<state id="1">
+			<value variable="i___22">FALSE</value>
+			<value variable="i___22_present">FALSE</value>
+			<value variable="Component___8Var.o___20">FALSE</value>
+			<value variable="Component___8Var.o___20_present">FALSE</value>
+			<value variable="Component___8Var.o_int___41">-0sd10_256</value>
+			<value variable="Component___8Var.o_int___41_present">FALSE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+	<node>
+		<state id="2">
+			<value variable="i___22">TRUE</value>
+			<value variable="i___22_present">FALSE</value>
+			<value variable="Component___8Var.o___20">TRUE</value>
+			<value variable="Component___8Var.o___20_present">TRUE</value>
+			<value variable="Component___8Var.o_int___41">0sd10_0</value>
+			<value variable="Component___8Var.o_int___41_present">TRUE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+	<node>
+		<state id="3">
+			<value variable="i___22">TRUE</value>
+			<value variable="i___22_present">FALSE</value>
+			<value variable="Component___8Var.o___20">TRUE</value>
+			<value variable="Component___8Var.o___20_present">TRUE</value>
+			<value variable="Component___8Var.o_int___41">0sd10_0</value>
+			<value variable="Component___8Var.o_int___41_present">TRUE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+	<node>
+		<state id="4">
+			<value variable="i___22">TRUE</value>
+			<value variable="i___22_present">FALSE</value>
+			<value variable="Component___8Var.o___20">TRUE</value>
+			<value variable="Component___8Var.o___20_present">TRUE</value>
+			<value variable="Component___8Var.o_int___41">0sd10_0</value>
+			<value variable="Component___8Var.o_int___41_present">TRUE</value>
+			<value variable="Component___8Var._current_state">Init___15</value>
+		</state>
+	</node>
+</counter-example>

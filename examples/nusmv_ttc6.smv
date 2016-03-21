@@ -1,0 +1,60 @@
+MODULE Component___8(i___22, i___22_present)
+
+VAR
+		o___20 : boolean;
+		o___20_present : boolean;
+		o_int___41 : signed word[10];
+		o_int___41_present : boolean;
+		_current_state : { Init___15, State___44 };
+
+
+
+ASSIGN
+init(o___20_present) := FALSE;
+init(o_int___41_present) := FALSE;
+init(_current_state) := Init___15;
+
+TRANS ((_current_state = Init___15) & (i___22_present = TRUE)) & 
+		next(_current_state) = State___44 & 
+		next(o_int___41) = ((0sd10_1 < -0sd10_255) ? -0sd10_256 : ((0sd10_1 > 0sd10_254) ? 0sd10_255 : 0sd10_1)) & 
+		next(o_int___41_present) = TRUE & 
+		next(o___20) = i___22 & 
+		next(o___20_present) = i___22_present | 
+	((_current_state = Init___15) & !((i___22_present = TRUE))) & 
+		next(_current_state) = Init___15 & 
+		next(o_int___41) = ((0sd10_0 < -0sd10_255) ? -0sd10_256 : ((0sd10_0 > 0sd10_254) ? 0sd10_255 : 0sd10_0)) & 
+		next(o_int___41_present) = TRUE & 
+		next(o___20) = TRUE & 
+		next(o___20_present) = TRUE | 
+	((_current_state = State___44) & (i___22_present = FALSE)) & 
+		next(_current_state) = Init___15 & 
+		next(o_int___41) = ((0sd10_0 < -0sd10_255) ? -0sd10_256 : ((0sd10_0 > 0sd10_254) ? 0sd10_255 : 0sd10_0)) & 
+		next(o_int___41_present) = TRUE & 
+		next(o___20) = TRUE & 
+		next(o___20_present) = TRUE | 
+	((_current_state = State___44) & !((i___22_present = FALSE))) & 
+		next(_current_state) = State___44 & 
+		next(o_int___41) = ((0sd10_1 < -0sd10_255) ? -0sd10_256 : ((0sd10_1 > 0sd10_254) ? 0sd10_255 : 0sd10_1)) & 
+		next(o_int___41_present) = TRUE & 
+		next(o___20) = i___22 & 
+		next(o___20_present) = i___22_present | 
+	(((!(((_current_state = Init___15) & (i___22_present = TRUE))) & !(((_current_state = Init___15) & !((i___22_present = TRUE))))) & !(((_current_state = State___44) & (i___22_present = FALSE)))) & !(((_current_state = State___44) & !((i___22_present = FALSE))))) & 
+		next(o___20) = o___20 & 
+		next(o___20_present) = FALSE & 
+		next(o_int___41) = o_int___41 & 
+		next(o_int___41_present) = FALSE & 
+		next(_current_state) = _current_state;
+
+
+INVAR ((o_int___41 >= -0sd10_256) & (o_int___41 <= 0sd10_255))
+
+MODULE main
+
+VAR
+		i___22 : boolean;
+		i___22_present : boolean;
+		Component___8Var : Component___8(i___22, i___22_present);
+
+
+
+

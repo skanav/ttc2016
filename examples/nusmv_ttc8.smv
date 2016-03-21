@@ -1,0 +1,56 @@
+MODULE Component___6(i___43, i___43_present)
+
+VAR
+		o___46 : signed word[10];
+		o___46_present : boolean;
+		_current_state : { Init___14, s___55 };
+		v___41 : signed word[10];
+
+
+
+ASSIGN
+init(o___46_present) := FALSE;
+init(_current_state) := Init___14;
+init(v___41) := (0sd10_0<(0sd10_0) ? -0sd10_1 : ((0sd10_0 > 0sd10_254) ? 0sd10_255 : 0sd10_0));
+
+TRANS ((_current_state = Init___14) & (i___43_present = TRUE)) & 
+		next(_current_state) = s___55 & 
+		next(v___41) = ((i___43 < 0sd10_0) ? -0sd10_1 : ((i___43 > 0sd10_254) ? 0sd10_255 : i___43)) & 
+		next(o___46) = o___46 & 
+		next(o___46_present) = FALSE | 
+	((_current_state = Init___14) & !((i___43_present = TRUE))) & 
+		next(_current_state) = Init___14 & 
+		next(o___46_present) = FALSE & 
+		next(o___46) = o___46 & 
+		next(v___41) = v___41 | 
+	((_current_state = s___55) & (i___43_present = FALSE)) & 
+		next(_current_state) = Init___14 & 
+		next(o___46) = ((v___41 < -0sd10_255) ? -0sd10_256 : ((v___41 > 0sd10_254) ? 0sd10_255 : v___41)) & 
+		next(o___46_present) = TRUE & 
+		next(v___41) = v___41 | 
+	((_current_state = s___55) & !((i___43_present = FALSE))) & 
+		next(_current_state) = s___55 & 
+		next(v___41) = (((v___41 + i___43) < 0sd10_0) ? -0sd10_1 : (((v___41 + i___43) > 0sd10_254) ? 0sd10_255 : (v___41 + i___43))) & 
+		next(o___46) = ((v___41 < -0sd10_255) ? -0sd10_256 : ((v___41 > 0sd10_254) ? 0sd10_255 : v___41)) & 
+		next(o___46_present) = TRUE | 
+	(((!(((_current_state = Init___14) & (i___43_present = TRUE))) & !(((_current_state = Init___14) & !((i___43_present = TRUE))))) & !(((_current_state = s___55) & (i___43_present = FALSE)))) & !(((_current_state = s___55) & !((i___43_present = FALSE))))) & 
+		next(o___46) = o___46 & 
+		next(o___46_present) = FALSE & 
+		next(_current_state) = _current_state & 
+		next(v___41) = v___41;
+
+
+INVAR ((o___46 >= -0sd10_256) & (o___46 <= 0sd10_255))
+INVAR ((v___41 >= -0sd10_1) & (v___41 <= 0sd10_255))
+
+MODULE main
+
+VAR
+		i___43 : signed word[10];
+		i___43_present : boolean;
+		Component___6Var : Component___6(i___43, i___43_present);
+
+
+INVAR ((i___43 >= -0sd10_256) & (i___43 <= 0sd10_255))
+
+

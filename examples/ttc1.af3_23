@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org-fortiss-af3-project:FileProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org-fortiss-af3-bounds="http://www.fortiss.org/af3/bounds" xmlns:org-fortiss-af3-component="http://www.fortiss.org/af3/component" xmlns:org-fortiss-af3-component-annotation="http://www.fortiss.org/af3/component/annotation" xmlns:org-fortiss-af3-expression="http://www.fortiss.org/af3/expression" xmlns:org-fortiss-af3-expression-terms="http://www.fortiss.org/af3/expression/terms" xmlns:org-fortiss-af3-expression-types="http://www.fortiss.org/af3/expression/types" xmlns:org-fortiss-af3-project="http://www.fortiss.org/af3/project" xmlns:org-fortiss-af3-project-configuration="http://www.fortiss.org/af3/project/configuration" xmlns:org-fortiss-af3-project-development="http://www.fortiss.org/af3/project/development" xmlns:org-fortiss-af3-safety-annotation="http://www.fortiss.org/af3/safety/annotation" xmlns:org-fortiss-af3-state="http://www.fortiss.org/af3/state" xmlns:org-fortiss-tooling-base-model-layout="http://www.fortiss.org/tooling/base/model/layout" xmi:id="0" name="ttc1">
+  <rootElements xsi:type="org-fortiss-af3-project:ProjectConfiguration" xmi:id="1" id="1">
+    <configurationElements xsi:type="org-fortiss-af3-project-configuration:TypeSystemConfiguration" xmi:id="2" id="2">
+      <typesystem xsi:type="org-fortiss-af3-expression:MicroTypeSystem"/>
+    </configurationElements>
+    <configurationElements xsi:type="org-fortiss-af3-project-configuration:DevelopmentProcessConfiguration" xmi:id="3" id="3">
+      <development xsi:type="org-fortiss-af3-project-development:DummyDevelopmentProcess"/>
+    </configurationElements>
+  </rootElements>
+  <rootElements xsi:type="org-fortiss-af3-component:ComponentArchitecture" xmi:id="4" id="4" name="Component Architecture">
+    <containedElements xsi:type="org-fortiss-af3-component:Component" xmi:id="5" id="5" name="Component Architecture Root" comment="">
+      <containedElements xsi:type="org-fortiss-af3-component:Component" xmi:id="8" id="8" name="Component" comment="">
+        <specifications xsi:type="org-fortiss-af3-component:CausalityComponentSpecification" xmi:id="9" id="9" stronglyCausal="true"/>
+        <specifications xsi:type="org-fortiss-af3-component:VerifBehaviourComponentSpecification" xmi:id="10" id="10"/>
+        <specifications xsi:type="org-fortiss-af3-component-annotation:MemoryRequirement" xmi:id="11" id="11"/>
+        <specifications xsi:type="org-fortiss-af3-safety-annotation:SafetyIntegrityLevel" xmi:id="12" id="12"/>
+        <specifications xsi:type="org-fortiss-af3-state:StateAutomaton" xmi:id="13" id="13">
+          <containedElements xsi:type="org-fortiss-af3-state:State" xmi:id="14" id="14" name="State Automaton" comment="">
+            <containedElements xsi:type="org-fortiss-af3-state:State" xmi:id="15" id="15" name="Init" comment="">
+              <specifications xsi:type="org-fortiss-af3-state:StateSpecification" xmi:id="16" id="16" initial="true">
+                <idleTransitionsSpecifications xmi:id="17" id="17">
+                  <actions stringRepresentation="o=true">
+                    <variable identifier="o"/>
+                    <value xsi:type="org-fortiss-af3-expression-terms:BoolConst" value="true"/>
+                  </actions>
+                </idleTransitionsSpecifications>
+              </specifications>
+              <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Point" key="pos" x="72" y="72"/>
+              <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Dimension" key="dim" width="108" height="72"/>
+            </containedElements>
+            <specifications xsi:type="org-fortiss-af3-state:StateSpecification" xmi:id="18" id="18">
+              <idleTransitionsSpecifications xmi:id="19" id="19"/>
+            </specifications>
+            <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Point" key="pos"/>
+            <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Dimension" key="dim" width="108" height="72"/>
+          </containedElements>
+        </specifications>
+        <connectors xsi:type="org-fortiss-af3-component:OutputPort" xmi:id="22" id="22" name="o" comment="">
+          <specifications xsi:type="org-fortiss-af3-component:PortSpecification" xmi:id="23" id="23">
+            <type xsi:type="org-fortiss-af3-expression-types:TBool"/>
+            <initialValue xsi:type="org-fortiss-af3-expression-terms:BoolConst"/>
+          </specifications>
+          <specifications xsi:type="org-fortiss-af3-bounds:VariableBoundsSpecification" xmi:id="24" id="24" upperBound="254" lowerBound="-255"/>
+          <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Point" key="pos"/>
+          <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Dimension" key="dim" width="108" height="72"/>
+          <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Point" key="cpos"/>
+          <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Dimension" key="cdim" width="0" height="0"/>
+          <layoutData xsi:type="org-fortiss-tooling-base-model-layout:OffsetOrientation" key="coffsetorient" offset="84" orientation="EAST"/>
+        </connectors>
+        <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Point" key="pos" x="456" y="216"/>
+        <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Dimension" key="dim" width="265" height="169"/>
+      </containedElements>
+      <specifications xsi:type="org-fortiss-af3-component:CausalityComponentSpecification" xmi:id="6" id="6"/>
+      <specifications xsi:type="org-fortiss-af3-component:VerifBehaviourComponentSpecification" xmi:id="7" id="7"/>
+      <specifications xsi:type="org-fortiss-af3-component-annotation:MemoryRequirement" xmi:id="25" id="25"/>
+      <specifications xsi:type="org-fortiss-af3-safety-annotation:SafetyIntegrityLevel" xmi:id="26" id="26"/>
+      <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Point" key="pos"/>
+      <layoutData xsi:type="org-fortiss-tooling-base-model-layout:Dimension" key="dim" width="108" height="72"/>
+    </containedElements>
+    <specifications xsi:type="org-fortiss-af3-safety-annotation:SafetyIntegrityLevel" xmi:id="27" id="27"/>
+  </rootElements>
+</org-fortiss-af3-project:FileProject>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counter-example>
+	<node>
+		<state id="1">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">FALSE</value>
+			<value variable="Component___6Var.o___46">-0sd10_256</value>
+			<value variable="Component___6Var.o___46_present">FALSE</value>
+			<value variable="Component___6Var._current_state">Init___14</value>
+			<value variable="Component___6Var.v___41">0sd10_0</value>
+		</state>
+	</node>
+	<node>
+		<state id="2">
+			<value variable="i___43">0sd10_128</value>
+			<value variable="i___43_present">TRUE</value>
+			<value variable="Component___6Var.o___46">-0sd10_256</value>
+			<value variable="Component___6Var.o___46_present">FALSE</value>
+			<value variable="Component___6Var._current_state">Init___14</value>
+			<value variable="Component___6Var.v___41">0sd10_0</value>
+		</state>
+	</node>
+	<node>
+		<state id="3">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">TRUE</value>
+			<value variable="Component___6Var.o___46">-0sd10_256</value>
+			<value variable="Component___6Var.o___46_present">FALSE</value>
+			<value variable="Component___6Var._current_state">s___55</value>
+			<value variable="Component___6Var.v___41">0sd10_128</value>
+		</state>
+	</node>
+	<node>
+		<state id="4">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">FALSE</value>
+			<value variable="Component___6Var.o___46">0sd10_128</value>
+			<value variable="Component___6Var.o___46_present">TRUE</value>
+			<value variable="Component___6Var._current_state">s___55</value>
+			<value variable="Component___6Var.v___41">-0sd10_1</value>
+		</state>
+	</node>
+	<node>
+		<state id="5">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">FALSE</value>
+			<value variable="Component___6Var.o___46">-0sd10_1</value>
+			<value variable="Component___6Var.o___46_present">TRUE</value>
+			<value variable="Component___6Var._current_state">Init___14</value>
+			<value variable="Component___6Var.v___41">-0sd10_1</value>
+		</state>
+	</node>
+	<node>
+		<state id="6">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">TRUE</value>
+			<value variable="Component___6Var.o___46">-0sd10_1</value>
+			<value variable="Component___6Var.o___46_present">FALSE</value>
+			<value variable="Component___6Var._current_state">Init___14</value>
+			<value variable="Component___6Var.v___41">-0sd10_1</value>
+		</state>
+	</node>
+	<node>
+		<state id="7">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">FALSE</value>
+			<value variable="Component___6Var.o___46">-0sd10_1</value>
+			<value variable="Component___6Var.o___46_present">FALSE</value>
+			<value variable="Component___6Var._current_state">s___55</value>
+			<value variable="Component___6Var.v___41">-0sd10_1</value>
+		</state>
+	</node>
+	<node>
+		<state id="8">
+			<value variable="i___43">-0sd10_256</value>
+			<value variable="i___43_present">FALSE</value>
+			<value variable="Component___6Var.o___46">-0sd10_1</value>
+			<value variable="Component___6Var.o___46_present">TRUE</value>
+			<value variable="Component___6Var._current_state">Init___14</value>
+			<value variable="Component___6Var.v___41">-0sd10_1</value>
+		</state>
+	</node>
+</counter-example>
